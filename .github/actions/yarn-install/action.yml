@@ -19,7 +19,7 @@ runs:
   steps:
     - name: Cache Local Modules
       id: cache-modules
-      uses: actions/cache@v3
+      uses: actions/cache@704facf57e6136b1bc63b828d79edcd491f0ee84 # v3
       with:
         path: '**/node_modules'
         key: ${{ inputs.cache-prefix }}-node_modules-${{ hashFiles('yarn.lock', '**/package.json', '.yarn/releases/**') }}
@@ -33,7 +33,7 @@ runs:
       shell: bash
 
     - name: Cache Global Modules
-      uses: actions/cache@v3
+      uses: actions/cache@704facf57e6136b1bc63b828d79edcd491f0ee84 # v3
       if: steps.cache-modules.outputs.cache-hit != 'true'
       with:
         path: ${{ steps.yarn-cache.outputs.dir }}
