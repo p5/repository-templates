@@ -1,0 +1,28 @@
+name: Serverless Deploy
+
+on:
+  workflow_call:
+    inputs:
+      target-env:
+        required: true
+        type: string
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ inputs.target-env }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.x
+
+      - name: Serverless Deploy
+        run: |
+          echo "Deploying to ${{ inputs.target-env }}"
+          echo "yarn run sls:deploy --stage ${{ inputs.target-env }}"
