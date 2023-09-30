@@ -10,7 +10,7 @@
     {
       // Automatically update any GitHub Actions packages through minor and patch upgrades
       "automerge": true,
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest"],
       "matchManagers": [
         "github-actions"
       ]
