@@ -43,6 +43,9 @@ jobs:
   deploy-preview:
     needs: package
     uses: ./.github/workflows/_vercel-deploy.yml
+    permissions:
+      contents: read
+      pull-requests: write
     with:
       working-directory: vercel-nextjs/
       target-env: staging
