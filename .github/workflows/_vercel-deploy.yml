@@ -49,32 +49,32 @@ jobs:
         env:
           ENVIRONMENT: ${{ inputs.is-production && 'production' || 'preview' }}
         run: |
-          yarn run vercel pull --environment $ENVIRONMENT --token ${{ secrets.VERCEL_TOKEN }}
+          yarn run vercel pull --environment $ENVIRONMENT --token ${{ env.VERCEL_TOKEN }}
 
       - name: Build Project (Preview)
         if: ${{ !inputs.is-production }}
         working-directory: ${{ inputs.working-directory }}
         run: |
-          yarn run vercel build --token ${{ secrets.VERCEL_TOKEN }}
+          yarn run vercel build --token ${{ env.VERCEL_TOKEN }}
 
       - name: Build Project (Production)
         if: ${{ inputs.is-production }}
         working-directory: ${{ inputs.working-directory }}
         run: |
-          yarn run vercel build --prod --token ${{ secrets.VERCEL_TOKEN }}
+          yarn run vercel build --prod --token ${{ env.VERCEL_TOKEN }}
 
       - name: Deploy to Vercel (Preview)
         if: ${{ !inputs.is-production }}
         working-directory: ${{ inputs.working-directory }}
         run: |
-          yarn run vercel deploy --prebuilt --token ${{ secrets.VERCEL_TOKEN }} > deployment_url.txt
+          yarn run vercel deploy --prebuilt --token ${{ env.VERCEL_TOKEN }} > deployment_url.txt
           echo "DEPLOYMENT_URL=$(cat deployment_url.txt)" >> $GITHUB_ENV
 
       - name: Deploy to Vercel (Production)
         if: ${{ inputs.is-production }}
         working-directory: ${{ inputs.working-directory }}
         run: |
-          yarn run vercel deploy --prod --token ${{ secrets.VERCEL_TOKEN }} > deployment_url.txt
+          yarn run vercel deploy --prod --token ${{ env.VERCEL_TOKEN }} > deployment_url.txt
           echo "DEPLOYMENT_URL=$(cat deployment_url.txt)" >> $GITHUB_ENV
 
       - name: Comment deployment info
