@@ -1,0 +1,35 @@
+service: serverless-typescript
+
+plugins:
+  - serverless-esbuild
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: ${opt:stage, 'local'}
+  region: ${opt:region, 'eu-west-1'}
+  deploymentMethod: direct
+  tracing:
+    apiGateway: true
+  logs:
+    httpApi: true
+  deploymentBucket:
+    blockPublicAccess: true
+
+package:
+  excludeDevDependencies: true
+  individually: true
+
+custom:
+  esbuild:
+    bundle: true
+    minify: false
+
+functions:
+  healthcheck:
+    handler: src/functions/healthcheck.handler
+    description: Healthcheck to verify the service is up and running
+    events:
+      - httpApi:
+          method: GET
+          path: /status

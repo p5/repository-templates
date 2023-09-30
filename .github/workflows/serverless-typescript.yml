@@ -1,0 +1,47 @@
+name: Serverless Typescript
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  test-and-package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        uses: ./.github/actions/yarn-install
+        with:
+          cache-prefix: ${{ runner.os }}-v1
+
+      - name: Test
+        run: yarn run sls:invoke
+
+      - name: Package
+        run: yarn run sls:package
+
+  deploy-staging:
+    needs: test-and-package
+    uses: ./.github/workflows/_serverless-deploy.yml
+    with:
+      target-env: staging
+    secrets: inherit
+
+  deploy-production:
+    needs: deploy-staging
+    uses: ./.github/workflows/_serverless-deploy.yml
+    with:
+      target-env: production
+    secrets: inherit

@@ -1,0 +1,20 @@
+{
+  "name": "serverless-typescript",
+  "version": "1.0.0",
+  "description": "Serverless aws-nodejs-typescript template",
+  "scripts": {
+    "sls:invoke": "yarn sls invoke local --function healthcheck",
+    "sls:package": "yarn sls package",
+    "sls:deploy": "yarn sls deploy"
+  },
+  "engines": {
+    "node": ">=18.17.1"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.71",
+    "esbuild": "^0.19.4",
+    "serverless": "^3.0.0",
+    "serverless-esbuild": "^1.48.4",
+    "typescript": "^4.1.3"
+  }
+}
