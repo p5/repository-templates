@@ -11,10 +11,6 @@
       // Automatically update any GitHub Actions packages through minor and patch upgrades
       "automerge": true,
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "matchDepNames": [
-        "actions/checkout",
-        "trufflesecurity/trufflehog"
-      ],
       "matchManagers": [
         "github-actions"
       ]
