@@ -24,8 +24,6 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: ${{ inputs.target-env }}
-    permissions:
-      pull-requests: write
     outputs:
       deployment-url: ${{ env.DEPLOYMENT_URL }}
     env:
