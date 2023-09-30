@@ -1,0 +1,37 @@
+name: Security Report
+description: File a security report
+title: "[SECURITY]: "
+labels:
+  - security
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this security report!
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the security issue
+      description: A clear and concise description of what the security issue is.
+      placeholder: The package [...] is vulnerable to [...]
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: What is the impact of this security issue?
+      placeholder: |
+        - [e.g. Denial of Service, Information Disclosure, etc.]
+    validations:
+      required: false
+  - type: textarea
+    id: remediation
+    attributes:
+      label: Remediation
+      description: How can this security issue be remediated?
+      placeholder: |
+        - [e.g. Patch, Upgrade to version X, etc.]
+    validations:
+      required: true
