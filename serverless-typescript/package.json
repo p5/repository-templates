@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Serverless aws-nodejs-typescript template",
   "scripts": {
-    "invoke": "yarn sls invoke local --function healthcheck"
+    "sls:invoke": "yarn sls invoke local --function healthcheck",
+    "sls:package": "yarn sls package",
+    "sls:deploy": "yarn sls deploy"
   },
   "engines": {
     "node": ">=18.17.1"
