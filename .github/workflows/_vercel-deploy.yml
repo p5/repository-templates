@@ -75,7 +75,7 @@ jobs:
         if: ${{ !inputs.is-preview }}
         working-directory: ${{ inputs.working-directory }}
         run: |
-          yarn run vercel deploy --prod --token ${{ env.VERCEL_TOKEN }} > deployment_url.txt
+          yarn run vercel deploy --prod --prebuilt --token ${{ env.VERCEL_TOKEN }} > deployment_url.txt
           echo "DEPLOYMENT_URL=$(cat deployment_url.txt)" >> $GITHUB_ENV
 
       - name: Comment deployment info
