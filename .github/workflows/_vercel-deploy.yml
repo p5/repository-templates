@@ -1,0 +1,82 @@
+name: Vercel Deploy
+
+on:
+  workflow_call:
+    inputs:
+      target-env:
+        required: true
+        type: string
+      is-production:
+        required: true
+        type: boolean
+      comment-deployment-info:
+        required: false
+        type: boolean
+    outputs:
+      deployment-url:
+        value: ${{ jobs.deploy.outputs.deployment-url }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ inputs.target-env }}
+    outputs:
+      deployment-url: ${{ env.DEPLOYMENT_URL }}
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ vars.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ vars.VERCEL_PROJECT_ID }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Install Dependencies
+        uses: ./.github/actions/yarn-install
+        with:
+          cache-prefix: ${{ runner.os }}-v1
+
+      - name: Pull Vercel Configuration
+        env:
+          ENVIRONMENT: ${{ inputs.is-production && 'production' || 'preview' }}
+        run: |
+          yarn run vercel pull --environment $ENVIRONMENT --token ${{ secrets.VERCEL_TOKEN }}
+
+      - name: Build Project (Preview)
+        if: ${{ !inputs.is-production }}
+        run: |
+          yarn run vercel build --token ${{ secrets.VERCEL_TOKEN }}
+
+      - name: Build Project (Production)
+        if: ${{ inputs.is-production }}
+        run: |
+          yarn run vercel build --prod --token ${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy to Vercel (Preview)
+        if: ${{ !inputs.is-production }}
+        run: |
+          yarn run vercel deploy --prebuilt --token ${{ secrets.VERCEL_TOKEN }} > deployment_url.txt
+          echo "DEPLOYMENT_URL=$(cat deployment_url.txt)" >> $GITHUB_ENV
+
+      - name: Deploy to Vercel (Production)
+        if: ${{ inputs.is-production }}
+        run: |
+          yarn run vercel deploy --prod --token ${{ secrets.VERCEL_TOKEN }} > deployment_url.txt
+          echo "DEPLOYMENT_URL=$(cat deployment_url.txt)" >> $GITHUB_ENV
+
+      - name: Comment deployment info
+        if: inputs.comment-deployment-info == true
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: Vercel ${{ inputs.target-env }} Deployment
+          message: |
+            ## Deployment Info
+
+            Commit: ${{ github.sha }}
+            URL: ${{ env.DEPLOYMENT_URL }}
+            Environment: `${{ inputs.target-env }}`
