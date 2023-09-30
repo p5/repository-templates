@@ -1,4 +1,4 @@
-name: Serverless Typescript CI
+name: Serverless Typescript
 
 on:
   pull_request:
