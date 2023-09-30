@@ -3,5 +3,5 @@
   "buildCommand": "yarn run build",
   "framework": null,
   "installCommand": "",
-  "outputDirectory": "dist"
+  "outputDirectory": ".next"
 }
