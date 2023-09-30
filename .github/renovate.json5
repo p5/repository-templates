@@ -3,7 +3,7 @@
 
   // Use the basic Renovate preset, and allow settings to be overridden
   "extends": [
-    "config:recommended"
+    "config:best-practices"
   ],
 
   "packageRules": [

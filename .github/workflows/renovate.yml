@@ -18,10 +18,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: lts
+          node-version: latest
 
       - name: Install dependencies
         run: npm install -g renovate
 
-      - name: Run Renovate Validate
+      - name: Validate Renovate config
         run: renovate-config-validator --strict
