@@ -7,6 +7,16 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    inputs:
+      target-env:
+        description: 'Target environment'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+          - staging
+          - production
 
 jobs:
   test-and-package:
@@ -33,7 +43,9 @@ jobs:
         run: yarn run sls:package
 
   deploy-staging:
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: |
+      ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }} ||
+      ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.target-env == 'staging' }}
     needs: test-and-package
     uses: ./.github/workflows/_serverless-deploy.yml
     with:
@@ -41,7 +53,9 @@ jobs:
     secrets: inherit
 
   deploy-production:
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: |
+      ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }} ||
+      ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.target-env == 'production' }}
     needs: deploy-staging
     uses: ./.github/workflows/_serverless-deploy.yml
     with:
