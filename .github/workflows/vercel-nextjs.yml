@@ -1,0 +1,77 @@
+name: Vercel NextJS
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      target-env:
+        description: 'Target environment'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+          - staging
+          - production
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        uses: ./.github/actions/yarn-install
+        with:
+          cache-prefix: ${{ runner.os }}-v1
+
+      - name: Build
+        run: yarn run build
+        working-directory: vercel-nextjs/
+
+  deploy-preview:
+    needs: package
+    uses: ./.github/workflows/_vercel-deploy.yml
+    permissions:
+      contents: read
+      pull-requests: write
+    with:
+      working-directory: vercel-nextjs/
+      target-env: staging
+      is-preview: true
+      comment-deployment-info: true
+    secrets: inherit
+
+  deploy-staging:
+    if: >
+      (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.target-env == 'staging')
+    needs: package
+    uses: ./.github/workflows/_vercel-deploy.yml
+    with:
+      working-directory: vercel-nextjs/
+      target-env: staging
+    secrets: inherit
+
+  deploy-production:
+    if: >
+      (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.target-env == 'production')
+    needs:
+      - deploy-staging
+    uses: ./.github/workflows/_vercel-deploy.yml
+    with:
+      working-directory: vercel-nextjs/
+      target-env: production
+    secrets: inherit

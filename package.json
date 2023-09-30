@@ -2,6 +2,7 @@
   "name": "repository-template",
   "packageManager": "yarn@3.6.3",
   "workspaces": [
-    "serverless-typescript"
+    "serverless-typescript",
+    "vercel-nextjs"
   ]
 }
