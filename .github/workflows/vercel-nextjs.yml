@@ -41,7 +41,7 @@ jobs:
 
   deploy-preview:
     needs: package
-    uses: ./.github/workflows/_serverless-deploy.yml
+    uses: ./.github/workflows/_vercel-deploy.yml
     with:
       target-env: staging
       is-production: false
@@ -51,7 +51,7 @@ jobs:
       (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
       (github.event_name == 'workflow_dispatch' && github.event.inputs.target-env == 'staging')
     needs: package
-    uses: ./.github/workflows/_serverless-deploy.yml
+    uses: ./.github/workflows/_vercel-deploy.yml
     with:
       target-env: staging
       is-production: true
@@ -62,7 +62,7 @@ jobs:
       (github.event_name == 'workflow_dispatch' && github.event.inputs.target-env == 'production')
     needs:
       - deploy-staging
-    uses: ./.github/workflows/_serverless-deploy.yml
+    uses: ./.github/workflows/_vercel-deploy.yml
     with:
       target-env: production
       is-production: true
