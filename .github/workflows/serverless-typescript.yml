@@ -22,7 +22,9 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: yarn install --immutable
+        uses: ./.github/actions/yarn-install
+        with:
+          cache-prefix: ${{ runner.os }}-v1
 
       - name: Test
         run: yarn run sls:invoke
