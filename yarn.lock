@@ -1303,7 +1303,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/aws-lambda@npm:^8.10.71":
+"@types/aws-lambda@npm:8.10.122":
   version: 8.10.122
   resolution: "@types/aws-lambda@npm:8.10.122"
   checksum: 5c2e02ae8fc0eea90fa3b1014f401a8567695e65910fb53452e813b9b58761c956fba50ac7da606b97e07d881d264ff513573d279e7116f3c6b9590fdb093f31
@@ -2550,7 +2550,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.19.4":
+"esbuild@npm:0.19.4":
   version: 0.19.4
   resolution: "esbuild@npm:0.19.4"
   dependencies:
@@ -4925,7 +4925,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serverless-esbuild@npm:^1.48.4":
+"serverless-esbuild@npm:1.48.4":
   version: 1.48.4
   resolution: "serverless-esbuild@npm:1.48.4"
   dependencies:
@@ -4956,15 +4956,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "serverless-typescript@workspace:serverless-typescript"
   dependencies:
-    "@types/aws-lambda": ^8.10.71
-    esbuild: ^0.19.4
-    serverless: ^3.0.0
-    serverless-esbuild: ^1.48.4
-    typescript: ^4.1.3
+    "@types/aws-lambda": 8.10.122
+    esbuild: 0.19.4
+    serverless: 3.35.2
+    serverless-esbuild: 1.48.4
+    typescript: 4.9.5
   languageName: unknown
   linkType: soft
 
-"serverless@npm:^3.0.0":
+"serverless@npm:3.35.2":
   version: 3.35.2
   resolution: "serverless@npm:3.35.2"
   dependencies:
@@ -5532,7 +5532,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.1.3":
+"typescript@npm:4.9.5":
   version: 4.9.5
   resolution: "typescript@npm:4.9.5"
   bin:
@@ -5542,7 +5542,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.1.3#~builtin<compat/typescript>":
+"typescript@patch:typescript@4.9.5#~builtin<compat/typescript>":
   version: 4.9.5
   resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"
   bin:

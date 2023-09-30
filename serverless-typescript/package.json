@@ -11,10 +11,10 @@
     "node": ">=18.17.1"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.71",
-    "esbuild": "^0.19.4",
-    "serverless": "^3.0.0",
-    "serverless-esbuild": "^1.48.4",
-    "typescript": "^4.1.3"
+    "@types/aws-lambda": "8.10.122",
+    "esbuild": "0.19.4",
+    "serverless": "3.35.2",
+    "serverless-esbuild": "1.48.4",
+    "typescript": "4.9.5"
   }
 }
