@@ -43,9 +43,9 @@ jobs:
         run: yarn run sls:package
 
   deploy-staging:
-    if: |
-      ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }} ||
-      ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.target-env == 'staging' }}
+    if: >
+      github.event_name == 'push' ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.target-env == 'staging')
     needs: test-and-package
     uses: ./.github/workflows/_serverless-deploy.yml
     with:
@@ -53,9 +53,9 @@ jobs:
     secrets: inherit
 
   deploy-production:
-    if: |
-      ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }} ||
-      ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.target-env == 'production' }}
+    if: >
+      github.event_name == 'push' ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.target-env == 'production')
     needs: deploy-staging
     uses: ./.github/workflows/_serverless-deploy.yml
     with:
