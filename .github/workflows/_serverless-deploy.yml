@@ -6,6 +6,9 @@ on:
       target-env:
         required: true
         type: string
+      working-directory:
+        required: false
+        type: string
 
 
 jobs:
@@ -28,6 +31,7 @@ jobs:
           cache-prefix: ${{ runner.os }}-v1
 
       - name: Serverless Deploy
+        working-directory: ${{ inputs.working-directory }}
         run: |
           echo "Deploying to ${{ inputs.target-env }}"
           echo "yarn run sls:deploy --stage ${{ inputs.target-env }}"

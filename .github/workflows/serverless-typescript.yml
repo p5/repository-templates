@@ -37,9 +37,11 @@ jobs:
           cache-prefix: ${{ runner.os }}-v1
 
       - name: Test
+        working-directory: serverless-typescript
         run: yarn run sls:invoke
 
       - name: Package
+        working-directory: serverless-typescript
         run: yarn run sls:package
 
   deploy-staging:
@@ -49,6 +51,7 @@ jobs:
     needs: test-and-package
     uses: ./.github/workflows/_serverless-deploy.yml
     with:
+      working-directory: serverless-typescript
       target-env: staging
     secrets: inherit
 
@@ -59,5 +62,6 @@ jobs:
     needs: deploy-staging
     uses: ./.github/workflows/_serverless-deploy.yml
     with:
+      working-directory: serverless-typescript
       target-env: production
     secrets: inherit
