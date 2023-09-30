@@ -9,8 +9,9 @@ on:
       working-directory:
         required: false
         type: string
-      is-production:
-        required: true
+      is-preview:
+        required: false
+        default: false
         type: boolean
       comment-deployment-info:
         required: false
@@ -47,31 +48,31 @@ jobs:
       - name: Pull Vercel Configuration
         working-directory: ${{ inputs.working-directory }}
         env:
-          ENVIRONMENT: ${{ inputs.is-production && 'production' || 'preview' }}
+          ENVIRONMENT: ${{ !inputs.is-preview && 'production' || 'preview' }}
         run: |
           yarn run vercel pull --environment $ENVIRONMENT --token ${{ env.VERCEL_TOKEN }}
 
       - name: Build Project (Preview)
-        if: ${{ !inputs.is-production }}
+        if: ${{ inputs.is-preview }}
         working-directory: ${{ inputs.working-directory }}
         run: |
           yarn run vercel build --token ${{ env.VERCEL_TOKEN }}
 
       - name: Build Project (Production)
-        if: ${{ inputs.is-production }}
+        if: ${{ !inputs.is-preview }}
         working-directory: ${{ inputs.working-directory }}
         run: |
           yarn run vercel build --prod --token ${{ env.VERCEL_TOKEN }}
 
       - name: Deploy to Vercel (Preview)
-        if: ${{ !inputs.is-production }}
+        if: ${{ inputs.is-preview }}
         working-directory: ${{ inputs.working-directory }}
         run: |
           yarn run vercel deploy --prebuilt --token ${{ env.VERCEL_TOKEN }} > deployment_url.txt
           echo "DEPLOYMENT_URL=$(cat deployment_url.txt)" >> $GITHUB_ENV
 
       - name: Deploy to Vercel (Production)
-        if: ${{ inputs.is-production }}
+        if: ${{ !inputs.is-preview }}
         working-directory: ${{ inputs.working-directory }}
         run: |
           yarn run vercel deploy --prod --token ${{ env.VERCEL_TOKEN }} > deployment_url.txt

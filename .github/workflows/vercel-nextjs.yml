@@ -49,7 +49,7 @@ jobs:
     with:
       working-directory: vercel-nextjs/
       target-env: staging
-      is-production: false
+      is-preview: true
       comment-deployment-info: true
     secrets: inherit
 
@@ -62,7 +62,6 @@ jobs:
     with:
       working-directory: vercel-nextjs/
       target-env: staging
-      is-production: true
     secrets: inherit
 
   deploy-production:
@@ -75,5 +74,4 @@ jobs:
     with:
       working-directory: vercel-nextjs/
       target-env: production
-      is-production: true
     secrets: inherit
