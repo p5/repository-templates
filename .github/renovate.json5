@@ -1,0 +1,8 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
+  // Use the basic Renovate preset, and allow settings to be overridden
+  "extends": [
+    "config:base"
+  ]
+}
