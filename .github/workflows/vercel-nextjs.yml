@@ -72,4 +72,5 @@ jobs:
       working-directory: vercel-nextjs/
       target-env: production
       is-production: true
+      comment-deployment-info: true
     secrets: inherit
