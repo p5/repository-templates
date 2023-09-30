@@ -12,9 +12,7 @@ provider:
   tracing:
     apiGateway: true
   logs:
-    restApi:
-      accessLogging: true
-      format: "requestId: $context.requestId, ip: $context.identity.sourceIp, caller: $context.identity.caller, user: $context.identity.user, requestTime: $context.requestTime, httpMethod: $context.httpMethod, resourcePath: $context.resourcePath, status: $context.status, protocol: $context.protocol, responseLength: $context.responseLength, integrationLatency: $context.integrationLatency, authorizerIntegrationLatency: $context.authorizer.integrationLatency, responseLatency: $context.responseLatency"
+    httpApi: true
   deploymentBucket:
     blockPublicAccess: true
 
@@ -32,6 +30,6 @@ functions:
     handler: src/functions/healthcheck.handler
     description: Healthcheck to verify the service is up and running
     events:
-      - http:
-          path: status
-          method: get
+      - httpApi:
+          method: GET
+          path: /status
