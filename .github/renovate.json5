@@ -3,8 +3,7 @@
 
   // Use the basic Renovate preset, and allow settings to be overridden
   "extends": [
-    "config:base",
-    "helpers:pinGitHubActionDigests"
+    "config:recommended"
   ],
 
   "packageRules": [
