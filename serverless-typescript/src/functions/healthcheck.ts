@@ -1,6 +1,6 @@
 module.exports.handler = async () => {
-    return {
-        body: 'OK',
-        statusCode: 200,
-    };
+  return {
+    body: 'OK',
+    statusCode: 200,
+  };
 }
