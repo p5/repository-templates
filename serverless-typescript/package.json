@@ -11,7 +11,7 @@
     "node": ">=18.17.1"
   },
   "devDependencies": {
-    "@types/aws-lambda": "8.10.122",
+    "@types/aws-lambda": "8.10.123",
     "esbuild": "0.19.4",
     "serverless": "3.35.2",
     "serverless-esbuild": "1.48.4",
