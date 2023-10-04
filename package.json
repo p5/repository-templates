@@ -1,6 +1,6 @@
 {
   "name": "repository-template",
-  "packageManager": "yarn@3.6.3",
+  "packageManager": "yarn@3.6.4",
   "workspaces": [
     "serverless-typescript",
     "vercel-nextjs"
