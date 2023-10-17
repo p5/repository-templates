@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@types/aws-lambda": "8.10.124",
-    "esbuild": "0.19.4",
+    "esbuild": "0.19.5",
     "serverless": "3.35.2",
     "serverless-esbuild": "1.48.5",
     "typescript": "5.2.2"
