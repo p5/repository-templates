@@ -21,6 +21,6 @@
     "postcss": "8.4.31",
     "tailwindcss": "3.3.5",
     "typescript": "5.3.2",
-    "vercel": "32.5.6"
+    "vercel": "32.6.0"
   }
 }
