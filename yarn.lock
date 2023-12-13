@@ -7973,13 +7973,13 @@ __metadata:
     react-dom: ^18.2.0
     tailwindcss: 3.3.6
     typescript: 5.3.3
-    vercel: 32.7.1
+    vercel: 32.7.2
   languageName: unknown
   linkType: soft
 
-"vercel@npm:32.7.1":
-  version: 32.7.1
-  resolution: "vercel@npm:32.7.1"
+"vercel@npm:32.7.2":
+  version: 32.7.2
+  resolution: "vercel@npm:32.7.2"
   dependencies:
     "@vercel/build-utils": 7.3.0
     "@vercel/fun": 1.1.0
@@ -7996,7 +7996,7 @@ __metadata:
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: 6061dceee84084587b13e25a9c93986acff0e3c551873b5992017005e113921e4ea0e65b53bcf2e9f65cd94627c2a84891ae72000f420764a4789c259fc63837
+  checksum: 0f0b4f03ac182a5beaa62040ebc762d8f510ec5872874497a813b1d2ac8a15fde74213e9729e7edad1dbcb4535cac66c218e6e591518f556e43ae0fcb886bd0e
   languageName: node
   linkType: hard
 
