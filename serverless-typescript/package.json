@@ -14,7 +14,7 @@
     "@types/aws-lambda": "8.10.124",
     "esbuild": "0.19.9",
     "serverless": "3.38.0",
-    "serverless-esbuild": "1.50.0",
+    "serverless-esbuild": "1.50.1",
     "typescript": "5.3.3"
   }
 }
