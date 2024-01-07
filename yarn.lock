@@ -1649,12 +1649,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.9.5":
-  version: 20.9.5
-  resolution: "@types/node@npm:20.9.5"
+"@types/node@npm:20.10.7":
+  version: 20.10.7
+  resolution: "@types/node@npm:20.10.7"
   dependencies:
     undici-types: ~5.26.4
-  checksum: 050ebd958e31ad21143f93614a25b15a8de5d0004338359409f76a661f734c4549698d852f21176c62f5661dacb572a090669cffef93cf6361c959e4d27d8d95
+  checksum: 86f4f96f5169538f47bbd652ab8e3712cd307701481ff3e9ce0c1ea7d8424a38b5ac4a1d33088cdd9ea1bfe68fd27bbae005a21969aa6d9a36295904da6f09f2
   languageName: node
   linkType: hard
 
@@ -7975,7 +7975,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vercel-nextjs@workspace:vercel-nextjs"
   dependencies:
-    "@types/node": 20.9.5
+    "@types/node": 20.10.7
     "@types/react": 18.2.47
     "@types/react-dom": 18.2.18
     autoprefixer: 10.4.16
