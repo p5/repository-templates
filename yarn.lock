@@ -6882,9 +6882,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serverless-esbuild@npm:1.50.1":
-  version: 1.50.1
-  resolution: "serverless-esbuild@npm:1.50.1"
+"serverless-esbuild@npm:1.50.2":
+  version: 1.50.2
+  resolution: "serverless-esbuild@npm:1.50.2"
   dependencies:
     acorn: ^8.8.1
     acorn-walk: ^8.2.0
@@ -6905,7 +6905,7 @@ __metadata:
   peerDependenciesMeta:
     esbuild-node-externals:
       optional: true
-  checksum: accfa2f73e815a055a22c4f229a3576749146a1ec458cb73282dfa45a411bfa4024e47dcb6d206a3e896f7ec582eaad575ee8c74709aa1ee051616cef70654ee
+  checksum: 95844b2e6a0bbd6cff2ebdcaf2d36bf9687714f5adc5f3b2b9ebaaf40fc8637dc5757342a6140220239a94981410524aa4de4c76bea8f8a050772cadf56da8f4
   languageName: node
   linkType: hard
 
@@ -6916,7 +6916,7 @@ __metadata:
     "@types/aws-lambda": 8.10.124
     esbuild: 0.19.12
     serverless: 3.38.0
-    serverless-esbuild: 1.50.1
+    serverless-esbuild: 1.50.2
     typescript: 5.3.3
   languageName: unknown
   linkType: soft
