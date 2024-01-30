@@ -1900,15 +1900,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/static-build@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@vercel/static-build@npm:2.1.0"
+"@vercel/static-build@npm:2.2.0":
+  version: 2.2.0
+  resolution: "@vercel/static-build@npm:2.2.0"
   dependencies:
     "@vercel/gatsby-plugin-vercel-analytics": 1.0.11
     "@vercel/gatsby-plugin-vercel-builder": 2.0.16
     "@vercel/static-config": 3.0.0
     ts-morph: 12.0.0
-  checksum: d4cd3656c4e34e50bd2f05bfd2d871ee9f6fa00dca9ec4b9239e0a2d530a1ef341501b3128cf20099b72860ae7444c2f44c5e455406e36bdd22e2b69ec716d0b
+  checksum: a996c02bde70ffe9e75a79525a97e08e2d6b6e485ecf96162e53babcd75fd72fe2b50b7a343f3bc5ac3c6e63fa0596b40edd3d6c03f8ca0201fd8f397e220874
   languageName: node
   linkType: hard
 
@@ -7992,13 +7992,13 @@ __metadata:
     react-dom: ^18.2.0
     tailwindcss: 3.4.1
     typescript: 5.3.3
-    vercel: 33.4.0
+    vercel: 33.4.1
   languageName: unknown
   linkType: soft
 
-"vercel@npm:33.4.0":
-  version: 33.4.0
-  resolution: "vercel@npm:33.4.0"
+"vercel@npm:33.4.1":
+  version: 33.4.1
+  resolution: "vercel@npm:33.4.1"
   dependencies:
     "@vercel/build-utils": 7.5.1
     "@vercel/fun": 1.1.0
@@ -8010,12 +8010,12 @@ __metadata:
     "@vercel/redwood": 2.0.6
     "@vercel/remix-builder": 2.0.18
     "@vercel/ruby": 2.0.5
-    "@vercel/static-build": 2.1.0
+    "@vercel/static-build": 2.2.0
     chokidar: 3.3.1
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: 06f76a75ce09f0be772d3ca6e8cb775dc0d0133f561c25d7458504c693127b44efee196c769d66a4776eb016883b1a5b9ec14071cece8465788f93d73529821c
+  checksum: e8d8028ff976e96c16a1da6b3122ee3f2af711afeb3f820bc8d6342fbaa1dd68f6686d82a1b7146a472dac69b7be3468a21f6275de6d89bfe30bd1d6976383cb
   languageName: node
   linkType: hard
 
