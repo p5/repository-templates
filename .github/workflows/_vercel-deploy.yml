@@ -80,7 +80,7 @@ jobs:
 
       - name: Comment deployment info
         if: inputs.comment-deployment-info == true
-        uses: marocchino/sticky-pull-request-comment@efaaab3fd41a9c3de579aba759d2552635e590fd # v2
+        uses: marocchino/sticky-pull-request-comment@331f8f5b4215f0445d3c07b4967662a32a2d3e31 # v2
         with:
           header: Vercel ${{ inputs.target-env }} Deployment
           message: |
