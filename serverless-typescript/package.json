@@ -15,6 +15,6 @@
     "esbuild": "0.20.1",
     "serverless": "3.38.0",
     "serverless-esbuild": "1.51.0",
-    "typescript": "5.3.3"
+    "typescript": "5.4.2"
   }
 }
