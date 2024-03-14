@@ -1703,10 +1703,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:7.8.0":
-  version: 7.8.0
-  resolution: "@vercel/build-utils@npm:7.8.0"
-  checksum: b198e3fd201a767eebae37f56ff3826bd09f5c8c7a6ef642721d11d0d7a0812aa2f83fbc7fda394b79ed6abae5b0bd8ba6d014891f45b42b962064464556c3f1
+"@vercel/build-utils@npm:7.9.0":
+  version: 7.9.0
+  resolution: "@vercel/build-utils@npm:7.9.0"
+  checksum: c5dd29e3e28e923b5abd0819a3092fbdfa3453d48531884cf08d535f76e61953a1399c461e823200b01f22b1fc1638a7e70c3711e5ac8cdd5117e7c7bd98d597
   languageName: node
   linkType: hard
 
@@ -1754,17 +1754,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/gatsby-plugin-vercel-builder@npm:2.0.20":
-  version: 2.0.20
-  resolution: "@vercel/gatsby-plugin-vercel-builder@npm:2.0.20"
+"@vercel/gatsby-plugin-vercel-builder@npm:2.0.21":
+  version: 2.0.21
+  resolution: "@vercel/gatsby-plugin-vercel-builder@npm:2.0.21"
   dependencies:
     "@sinclair/typebox": 0.25.24
-    "@vercel/build-utils": 7.8.0
+    "@vercel/build-utils": 7.9.0
     "@vercel/routing-utils": 3.1.0
     esbuild: 0.14.47
     etag: 1.8.1
     fs-extra: 11.1.0
-  checksum: cf67760a2cf22c22fb103b032d0f21332279d0033a4996b76a0b07ccd5608aa50ea9e9b5d3f2ee96b3cca2e89e6341233d6c76913bb2602b1d8db0fa3313e9f8
+  checksum: aebbc3c9d913a73947053dc82fcdf98b85c3fc037490a0c45a090c0982d76a1eeb3778eeb11fcb449330e8031ca67862aca33f87cfcbc12d5c12bd44254e9241
   languageName: node
   linkType: hard
 
@@ -1816,15 +1816,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:3.0.22":
-  version: 3.0.22
-  resolution: "@vercel/node@npm:3.0.22"
+"@vercel/node@npm:3.0.23":
+  version: 3.0.23
+  resolution: "@vercel/node@npm:3.0.23"
   dependencies:
     "@edge-runtime/node-utils": 2.3.0
     "@edge-runtime/primitives": 4.1.0
     "@edge-runtime/vm": 3.2.0
     "@types/node": 14.18.33
-    "@vercel/build-utils": 7.8.0
+    "@vercel/build-utils": 7.9.0
     "@vercel/error-utils": 2.0.2
     "@vercel/nft": 0.26.4
     "@vercel/static-config": 3.0.0
@@ -1840,7 +1840,7 @@ __metadata:
     ts-node: 10.9.1
     typescript: 4.9.5
     undici: 5.26.5
-  checksum: 23594c3f69ba197d96096de8763393cdd9d12a89d468c117b74a7b0c8165f14c2916c4921c06554ebef66de0e5ae7626499fe3175f37087a6c5155e655ccb03b
+  checksum: 6968da55326b933375c0d2416ab1d7ec5008679863abba2725763a86dd4e361d50f393e33e0063d7a0d17747d2662cd75bf7561891f3e06062c691e9c965f527
   languageName: node
   linkType: hard
 
@@ -1862,15 +1862,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/remix-builder@npm:2.1.2":
-  version: 2.1.2
-  resolution: "@vercel/remix-builder@npm:2.1.2"
+"@vercel/remix-builder@npm:2.1.3":
+  version: 2.1.3
+  resolution: "@vercel/remix-builder@npm:2.1.3"
   dependencies:
     "@vercel/error-utils": 2.0.2
     "@vercel/nft": 0.26.4
     "@vercel/static-config": 3.0.0
     ts-morph: 12.0.0
-  checksum: 074125cd38ede62282798562396e60ad197936c2f81a17932724dcfd073891582478b2910bf991b7aad694ee3c0ee1aca013b23e9d8c33fa3eeb0f9a81c3dc7a
+  checksum: 595379b9453a85b3540eb8c763bf0f73092372bd1d7abec4e70bca612f434ffc681e955ffec0d7900d160de3cf9988b3ba4dec015d4ad9202aa5292f9d5eb532
   languageName: node
   linkType: hard
 
@@ -1894,15 +1894,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/static-build@npm:2.4.2":
-  version: 2.4.2
-  resolution: "@vercel/static-build@npm:2.4.2"
+"@vercel/static-build@npm:2.4.3":
+  version: 2.4.3
+  resolution: "@vercel/static-build@npm:2.4.3"
   dependencies:
     "@vercel/gatsby-plugin-vercel-analytics": 1.0.11
-    "@vercel/gatsby-plugin-vercel-builder": 2.0.20
+    "@vercel/gatsby-plugin-vercel-builder": 2.0.21
     "@vercel/static-config": 3.0.0
     ts-morph: 12.0.0
-  checksum: 5603a599629620515058e9585151691837df3e50a033da5438c8fab81b5962871149e5ad12c42ea4b26e0584252bd4405be1cc61f87502e7c3751c97546cb703
+  checksum: 2d018372729c204a7db73938cf603b977164a75daa8f0711204a3bf3efff29da93545491257b6eb1b86cdd5c39bef5a12d414fa5b94df245499851f13d0c3a5d
   languageName: node
   linkType: hard
 
@@ -8000,30 +8000,30 @@ __metadata:
     react-dom: ^18.2.0
     tailwindcss: 3.4.1
     typescript: 5.4.2
-    vercel: 33.5.5
+    vercel: 33.6.0
   languageName: unknown
   linkType: soft
 
-"vercel@npm:33.5.5":
-  version: 33.5.5
-  resolution: "vercel@npm:33.5.5"
+"vercel@npm:33.6.0":
+  version: 33.6.0
+  resolution: "vercel@npm:33.6.0"
   dependencies:
-    "@vercel/build-utils": 7.8.0
+    "@vercel/build-utils": 7.9.0
     "@vercel/fun": 1.1.0
     "@vercel/go": 3.0.5
     "@vercel/hydrogen": 1.0.2
     "@vercel/next": 4.1.5
-    "@vercel/node": 3.0.22
+    "@vercel/node": 3.0.23
     "@vercel/python": 4.1.1
     "@vercel/redwood": 2.0.8
-    "@vercel/remix-builder": 2.1.2
+    "@vercel/remix-builder": 2.1.3
     "@vercel/ruby": 2.0.5
-    "@vercel/static-build": 2.4.2
+    "@vercel/static-build": 2.4.3
     chokidar: 3.3.1
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: b900d957dd6e0bbd675221b2a22c2391f07237093e82631427640d68e280c22bd8d8b3b45f410fec554d4845b55f062d0ba36059bf70cbfeade16ce825f6daf1
+  checksum: 3dbc382b38f4b253d1d06e4d7eb0566c9ac65fa51d887a40764541a4720c9b1147aae25f413cbb248d45be969f08ffda955115f143c04105cf13ffc68bbbf6fc
   languageName: node
   linkType: hard
 
