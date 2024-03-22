@@ -1676,14 +1676,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.67":
-  version: 18.2.67
-  resolution: "@types/react@npm:18.2.67"
+"@types/react@npm:18.2.68":
+  version: 18.2.68
+  resolution: "@types/react@npm:18.2.68"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 9e48122b0e8d0ae20601f613aca32289eeb94d55c58ff03a7dc532d80ed289a1ba9715f14b773bd926ccdd63e503717f14264143ef531dc370063abe09dee0b2
+  checksum: 76786df04f4c45ee8812f86d44f09e0d8adc122ab9468ec3577fdef924ad7ab948a4eeb32c5281656b4bf17a9017be7e9c79b98da3f8d01b22dbfdf507a7510b
   languageName: node
   linkType: hard
 
@@ -8005,7 +8005,7 @@ __metadata:
   resolution: "vercel-nextjs@workspace:vercel-nextjs"
   dependencies:
     "@types/node": 20.11.30
-    "@types/react": 18.2.67
+    "@types/react": 18.2.68
     "@types/react-dom": 18.2.22
     autoprefixer: 10.4.19
     next: ^13.5.3
