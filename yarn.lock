@@ -1767,10 +1767,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/go@npm:3.1.0":
-  version: 3.1.0
-  resolution: "@vercel/go@npm:3.1.0"
-  checksum: f53bb88ff5d54f45971909607a968dcef5b170758dc66e5e56b0f5d16b94bcbdc60dc1965fd36aba2ec45055e86eb16a1eb2fb9e09cb70b529f16705b45bdc28
+"@vercel/go@npm:3.1.1":
+  version: 3.1.1
+  resolution: "@vercel/go@npm:3.1.1"
+  checksum: 8c574ec5dee98ef52d91970f12e0d6b3282b848718e64def3b31ffae7d2ac9b928ee475553187bd31cb07025fa39ca2bf22e26d84ef165de2a43bb36b5224a13
   languageName: node
   linkType: hard
 
@@ -8013,17 +8013,17 @@ __metadata:
     react-dom: ^18.2.0
     tailwindcss: 3.4.3
     typescript: 5.4.4
-    vercel: 33.6.3
+    vercel: 33.7.0
   languageName: unknown
   linkType: soft
 
-"vercel@npm:33.6.3":
-  version: 33.6.3
-  resolution: "vercel@npm:33.6.3"
+"vercel@npm:33.7.0":
+  version: 33.7.0
+  resolution: "vercel@npm:33.7.0"
   dependencies:
     "@vercel/build-utils": 7.11.0
     "@vercel/fun": 1.1.0
-    "@vercel/go": 3.1.0
+    "@vercel/go": 3.1.1
     "@vercel/hydrogen": 1.0.2
     "@vercel/next": 4.1.6
     "@vercel/node": 3.0.26
@@ -8036,7 +8036,7 @@ __metadata:
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: 21fa80416c7922335c993d4bec7becae2dd61c87f869fcb3ab0872ad18fea18920b7cbd27c990e12697805ba2824a77b64c4d64d42cbf398a987f9dca81a9d83
+  checksum: 02deccda4a02bbd35adbd1db793a4352c76f924a041591ddbbe6710bd9d6475fc65c5916e6d12ce1e9e6c9dd6708453307e459e9a384e0f8f58312ac9360c045
   languageName: node
   linkType: hard
 
