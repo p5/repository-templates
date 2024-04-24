@@ -1784,12 +1784,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/next@npm:4.2.1":
-  version: 4.2.1
-  resolution: "@vercel/next@npm:4.2.1"
+"@vercel/next@npm:4.2.2":
+  version: 4.2.2
+  resolution: "@vercel/next@npm:4.2.2"
   dependencies:
     "@vercel/nft": 0.26.4
-  checksum: e73223fa600f0516f298d83c8689108228a093d71873d327611f991c152bf8aeb28f9b8ed19b9fcae5922a1a3ee1ab7eb65edbd2fa79fdd43e60379805f2de3f
+  checksum: 371a819e0174da7d20623950db9b691e3915b9eaac739c272489c2e525dd0c2cc72e1f2c43c09bacb88507d6dc3f2e616d71b7b0953c5ea20063b0b9f2a8f8b7
   languageName: node
   linkType: hard
 
@@ -1843,10 +1843,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/python@npm:4.1.1":
-  version: 4.1.1
-  resolution: "@vercel/python@npm:4.1.1"
-  checksum: e9a27a0a5408cee50318321dc9093f64ec8a954fee0430cc3094999a0fac7eff9d62df975a43dc92f02e72b6aa3f3f9a24aa35b06f580a18d1e6d180857118e6
+"@vercel/python@npm:4.2.0":
+  version: 4.2.0
+  resolution: "@vercel/python@npm:4.2.0"
+  checksum: 380b3b357776941a711ae20d875c9ce8d2d5dfec3f7c347ee5310dc893ce9b1664d8d3351007fb7215ba7999a9344f5f435ba1f5c5a599a760c90bbe56a4751d
   languageName: node
   linkType: hard
 
@@ -8013,21 +8013,21 @@ __metadata:
     react-dom: ^18.2.0
     tailwindcss: 3.4.3
     typescript: 5.4.5
-    vercel: 34.1.1
+    vercel: 34.1.2
   languageName: unknown
   linkType: soft
 
-"vercel@npm:34.1.1":
-  version: 34.1.1
-  resolution: "vercel@npm:34.1.1"
+"vercel@npm:34.1.2":
+  version: 34.1.2
+  resolution: "vercel@npm:34.1.2"
   dependencies:
     "@vercel/build-utils": 7.12.0
     "@vercel/fun": 1.1.0
     "@vercel/go": 3.1.1
     "@vercel/hydrogen": 1.0.2
-    "@vercel/next": 4.2.1
+    "@vercel/next": 4.2.2
     "@vercel/node": 3.0.27
-    "@vercel/python": 4.1.1
+    "@vercel/python": 4.2.0
     "@vercel/redwood": 2.0.8
     "@vercel/remix-builder": 2.1.5
     "@vercel/ruby": 2.0.5
@@ -8036,7 +8036,7 @@ __metadata:
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: 2dc5e7a56a14ebcc506bac324ac0f614acae2c2fba581ea304239c0807a95501e5f78ac3df621219092a47591bf35f5353661eacf958a8afe1300b521e9e035b
+  checksum: a4a61121ce83c402040ad497792f6abb76e4bd00cf2e3e68f2ad778a6076cf506c0dc0e77e56165aa7805e88c4206537db10518b7eb2f1962ca0f2e40ff2a24a
   languageName: node
   linkType: hard
 
