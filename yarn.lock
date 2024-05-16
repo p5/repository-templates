@@ -1702,10 +1702,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:8.1.3":
-  version: 8.1.3
-  resolution: "@vercel/build-utils@npm:8.1.3"
-  checksum: 25eadd4aa0cb39c85fa98762c6d56bb97516afcc98e4d734a4100c1762a9c56812385e26d4460df65827b58a8e6fdabb285ee8b60f4dd809480c25f51dd09978
+"@vercel/build-utils@npm:8.2.0":
+  version: 8.2.0
+  resolution: "@vercel/build-utils@npm:8.2.0"
+  checksum: a6c77575133672c09aeb0611398fcbbfd76d7fcb1412964c5c6e0e93bdb5cfe63fd60c965235844fc427451d21116a87ad9733969f8a6f71b3e9ec8db9f7622b
   languageName: node
   linkType: hard
 
@@ -1753,17 +1753,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/gatsby-plugin-vercel-builder@npm:2.0.30":
-  version: 2.0.30
-  resolution: "@vercel/gatsby-plugin-vercel-builder@npm:2.0.30"
+"@vercel/gatsby-plugin-vercel-builder@npm:2.0.31":
+  version: 2.0.31
+  resolution: "@vercel/gatsby-plugin-vercel-builder@npm:2.0.31"
   dependencies:
     "@sinclair/typebox": 0.25.24
-    "@vercel/build-utils": 8.1.3
+    "@vercel/build-utils": 8.2.0
     "@vercel/routing-utils": 3.1.0
     esbuild: 0.14.47
     etag: 1.8.1
     fs-extra: 11.1.0
-  checksum: 45b3aba104bede951e8c54e8cbba90225c1d55cc6afcb821ce632c77539656936959829b7b87ea499cbea698e9cbd9dda46bba16d0fae89809467e98a6c39fd1
+  checksum: 6a742afdbb7333486570cbe8fed251b0756f9a588e53f79f8b29da2065b25d739b5f111630c5fa422fe7fafad685424294c2ca2f21f47ab7df55e0709235c5b8
   languageName: node
   linkType: hard
 
@@ -1815,15 +1815,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:3.1.4":
-  version: 3.1.4
-  resolution: "@vercel/node@npm:3.1.4"
+"@vercel/node@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@vercel/node@npm:3.1.5"
   dependencies:
     "@edge-runtime/node-utils": 2.3.0
     "@edge-runtime/primitives": 4.1.0
     "@edge-runtime/vm": 3.2.0
     "@types/node": 16.18.11
-    "@vercel/build-utils": 8.1.3
+    "@vercel/build-utils": 8.2.0
     "@vercel/error-utils": 2.0.2
     "@vercel/nft": 0.27.0
     "@vercel/static-config": 3.0.0
@@ -1839,7 +1839,7 @@ __metadata:
     ts-node: 10.9.1
     typescript: 4.9.5
     undici: 5.26.5
-  checksum: 9316e8c91335ee606d515b7d26df0d24cc87c164b75702bdf1f064027fc517b6843f33be692995cca82e26bf27bc0965cd434e68dc380e2f971c884390e3718a
+  checksum: 1e63eb92b67c75b9d819a1b20f6f6e3d849a5f75910a8554d28ca152e22779727bb21edaeacdce341761b6f1a7d63912fb51f792601550b3228dd3dd7133f0f7
   languageName: node
   linkType: hard
 
@@ -1893,15 +1893,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/static-build@npm:2.5.8":
-  version: 2.5.8
-  resolution: "@vercel/static-build@npm:2.5.8"
+"@vercel/static-build@npm:2.5.9":
+  version: 2.5.9
+  resolution: "@vercel/static-build@npm:2.5.9"
   dependencies:
     "@vercel/gatsby-plugin-vercel-analytics": 1.0.11
-    "@vercel/gatsby-plugin-vercel-builder": 2.0.30
+    "@vercel/gatsby-plugin-vercel-builder": 2.0.31
     "@vercel/static-config": 3.0.0
     ts-morph: 12.0.0
-  checksum: 0103581255246225e19ef70af7de1334b473595216f81e60d4652656bb6edb2d1c82d6e63fff7771c8e2768636ecb7bc24c2ade88a72b2858b8fb1cdee2e3a9b
+  checksum: 50b498d970fedf371a3f32946dabd5b84b8f20e284a799f35abdd7543b71e11bc061ae90792d8bd359094cb9f7b51b52376985f39f7860a6b2cde5f25249b28e
   languageName: node
   linkType: hard
 
@@ -8013,30 +8013,30 @@ __metadata:
     react-dom: ^18.2.0
     tailwindcss: 3.4.3
     typescript: 5.4.5
-    vercel: 34.1.14
+    vercel: 34.2.0
   languageName: unknown
   linkType: soft
 
-"vercel@npm:34.1.14":
-  version: 34.1.14
-  resolution: "vercel@npm:34.1.14"
+"vercel@npm:34.2.0":
+  version: 34.2.0
+  resolution: "vercel@npm:34.2.0"
   dependencies:
-    "@vercel/build-utils": 8.1.3
+    "@vercel/build-utils": 8.2.0
     "@vercel/fun": 1.1.0
     "@vercel/go": 3.1.1
     "@vercel/hydrogen": 1.0.2
     "@vercel/next": 4.2.11
-    "@vercel/node": 3.1.4
+    "@vercel/node": 3.1.5
     "@vercel/python": 4.2.0
     "@vercel/redwood": 2.0.9
     "@vercel/remix-builder": 2.1.6
     "@vercel/ruby": 2.1.0
-    "@vercel/static-build": 2.5.8
+    "@vercel/static-build": 2.5.9
     chokidar: 3.3.1
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: 58ab5b8b37b99a2d639ba0ab978019e9d417afd2c98436a84daef8246266a8839f7bca5fb991d5a91b3297dfb84576c2f9045c8bc092945ce02bd2f9387adfa2
+  checksum: f1dfef90b7f44eb5f8c4fa7c970a3ee927b4319fb0745ff35fa6847774c0cf38951ba53d9b78996f393810009451ea196e58e46b2cd1292476d9ca644439ba9e
   languageName: node
   linkType: hard
 
