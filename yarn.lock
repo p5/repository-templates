@@ -497,10 +497,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/aws-lambda@npm:8.10.138":
-  version: 8.10.138
-  resolution: "@types/aws-lambda@npm:8.10.138"
-  checksum: 99784f008ac9ca1f85fd0de1149ee11c5f6b9c00d836dfc1eeebec7d4bb288d540f8f6d05991f26ce9f59375532c748fb2e646472a65ff881220851804a908b2
+"@types/aws-lambda@npm:8.10.139":
+  version: 8.10.139
+  resolution: "@types/aws-lambda@npm:8.10.139"
+  checksum: 4455d58c108671a4ebdaeba7365edaf81c9ef128d6bd4b0702a9d30cd7555887dc853544b69ccfdc867e5ef4f26c5dd52756384b092a73b465d1921666a889e9
   languageName: node
   linkType: hard
 
@@ -4054,7 +4054,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "serverless-typescript@workspace:serverless-typescript"
   dependencies:
-    "@types/aws-lambda": 8.10.138
+    "@types/aws-lambda": 8.10.139
     esbuild: 0.21.5
     serverless: 4.1.0
     serverless-esbuild: 1.52.1
