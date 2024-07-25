@@ -19,7 +19,7 @@
     "@types/react-dom": "18.2.25",
     "autoprefixer": "10.4.19",
     "postcss": "8.4.40",
-    "tailwindcss": "3.4.6",
+    "tailwindcss": "3.4.7",
     "typescript": "5.5.4",
     "vercel": "35.2.0"
   }
