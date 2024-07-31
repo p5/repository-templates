@@ -739,15 +739,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/remix-builder@npm:2.2.1":
-  version: 2.2.1
-  resolution: "@vercel/remix-builder@npm:2.2.1"
+"@vercel/remix-builder@npm:2.2.2":
+  version: 2.2.2
+  resolution: "@vercel/remix-builder@npm:2.2.2"
   dependencies:
     "@vercel/error-utils": 2.0.2
     "@vercel/nft": 0.27.3
     "@vercel/static-config": 3.0.0
     ts-morph: 12.0.0
-  checksum: 7622b2d97193599df2715ceecb422cacdea5ba0f1c1825d1570edf0c2f1ffc69d55db516a4bb8471134161a0e4998d727e3ea42b4da802a4c947bc3a41a67475
+  checksum: d8fe2d21cc5f280a68d51e8e4c576a497286720c5640eaf406de56bb6996e40b6ddd14fe1d34bf9f3caac4fba5f64f113bc8ac258429d829c244732d7793a6b3
   languageName: node
   linkType: hard
 
@@ -4723,13 +4723,13 @@ __metadata:
     react-dom: ^18.2.0
     tailwindcss: 3.4.7
     typescript: 5.5.4
-    vercel: 35.2.1
+    vercel: 35.2.2
   languageName: unknown
   linkType: soft
 
-"vercel@npm:35.2.1":
-  version: 35.2.1
-  resolution: "vercel@npm:35.2.1"
+"vercel@npm:35.2.2":
+  version: 35.2.2
+  resolution: "vercel@npm:35.2.2"
   dependencies:
     "@vercel/build-utils": 8.3.5
     "@vercel/fun": 1.1.0
@@ -4739,14 +4739,14 @@ __metadata:
     "@vercel/node": 3.2.7
     "@vercel/python": 4.3.1
     "@vercel/redwood": 2.1.3
-    "@vercel/remix-builder": 2.2.1
+    "@vercel/remix-builder": 2.2.2
     "@vercel/ruby": 2.1.0
     "@vercel/static-build": 2.5.17
     chokidar: 3.3.1
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: f85d4f091960e9b886f15a11b1ef7b641d086d6d8765076b10aad88f40a7013cc3b52cf7a84b108281327f90fbc753a8b2578bad9ca7497897fc54b3b9b21c46
+  checksum: a6535c98b147e9e42073b943b2e11757bfd626d3258a33e02b44c215bc5b910ffae64dfdc47364a2ef233698b73c4716622a46a56ace12ab3bb3821b4d77bf55
   languageName: node
   linkType: hard
 
