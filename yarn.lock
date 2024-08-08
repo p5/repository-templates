@@ -4075,15 +4075,15 @@ __metadata:
   dependencies:
     "@types/aws-lambda": 8.10.143
     esbuild: 0.23.0
-    serverless: 4.1.19
+    serverless: 4.1.20
     serverless-esbuild: 1.52.1
     typescript: 5.5.4
   languageName: unknown
   linkType: soft
 
-"serverless@npm:4.1.19":
-  version: 4.1.19
-  resolution: "serverless@npm:4.1.19"
+"serverless@npm:4.1.20":
+  version: 4.1.20
+  resolution: "serverless@npm:4.1.20"
   dependencies:
     axios: ^1.6.0
     axios-proxy-builder: ^0.1.2
@@ -4091,7 +4091,7 @@ __metadata:
   bin:
     serverless: run.js
     sls: run.js
-  checksum: b0a8d64610db1608c8e419ff078b5a502d2413157c1484cdfc6c2c8e93673b33f2927f6ece1f99e53f6ce63b7428c4a1c23fa11e7e5071a34f8f4f33685fe866
+  checksum: 6061f9fd01c12ea2a276b7823fc0509a0b97c74432bb4395bf055fa2f694c51852c89813bcb621891389b9d2381a6a178930795a75d4dfdd952348a3522719c0
   languageName: node
   linkType: hard
 
