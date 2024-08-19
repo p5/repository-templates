@@ -1100,14 +1100,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.6.0":
-  version: 1.7.2
-  resolution: "axios@npm:1.7.2"
+"axios@npm:^1.7.4":
+  version: 1.7.4
+  resolution: "axios@npm:1.7.4"
   dependencies:
     follow-redirects: ^1.15.6
     form-data: ^4.0.0
     proxy-from-env: ^1.1.0
-  checksum: e457e2b0ab748504621f6fa6609074ac08c824bf0881592209dfa15098ece7e88495300e02cd22ba50b3468fd712fe687e629dcb03d6a3f6a51989727405aedf
+  checksum: 0c17039a9acfe6a566fca8431ba5c1b455c83d30ea6157fec68a6722878fcd30f3bd32d172f6bee0c51fe75ca98e6414ddcd968a87b5606b573731629440bfaf
   languageName: node
   linkType: hard
 
@@ -4082,24 +4082,24 @@ __metadata:
   dependencies:
     "@types/aws-lambda": 8.10.143
     esbuild: 0.23.1
-    serverless: 4.1.22
+    serverless: 4.1.23
     serverless-esbuild: 1.52.1
     typescript: 5.5.4
   languageName: unknown
   linkType: soft
 
-"serverless@npm:4.1.22":
-  version: 4.1.22
-  resolution: "serverless@npm:4.1.22"
+"serverless@npm:4.1.23":
+  version: 4.1.23
+  resolution: "serverless@npm:4.1.23"
   dependencies:
-    axios: ^1.6.0
+    axios: ^1.7.4
     axios-proxy-builder: ^0.1.2
     rimraf: ^5.0.5
     xml2js: 0.6.2
   bin:
     serverless: run.js
     sls: run.js
-  checksum: b90f19ec595e87504c51c9bbaa585fcef05416b2157c557e7f44a0e36136018a7b3bcad71c73bdc42b7e3a7566515f9371269d7a7a2074dafdf21103015b810e
+  checksum: 098858551e2c6df941770481c846a2f40492099a44b7abc5467a0c34046a7535ddca6ac767e056066e6df7e32e016dfbd1ac55ab9d793ed9133b324f34777a7d
   languageName: node
   linkType: hard
 
